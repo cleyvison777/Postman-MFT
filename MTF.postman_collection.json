@@ -1,0 +1,1518 @@
+{
+	"info": {
+		"_postman_id": "983afc36-978f-4254-983e-7e0e585281a2",
+		"name": "MTF",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "MFTFamilia",
+			"item": [
+				{
+					"name": "Busca Registros da Familia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cadfamilia/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadfamilia",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Inserir Registro cadFamilia",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {           \n \t\n \t\"nmFamilia\": \"teste\"\n        }"
+						},
+						"url": {
+							"raw": "localhost:8080/cadfamilia",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadfamilia"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutCadFamilia",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdFamilia\": 5,\r\n        \"nmFamilia\": \"TESTE\"\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/cadfamilia/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadfamilia",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_Familia",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cadfamilia/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadfamilia",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar Familia",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cadfamilia",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadfamilia"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MFTCadEmpresa",
+			"item": [
+				{
+					"name": "Listar d13_empresa",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cadempresa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadempresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "D13_empresa_post",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{    \n\t\"d13_nmempresa\": \"TESTE6\",\n    \"d13_nmabreviado\":\"TESTE6\",\n    \"d13_nrtelefone\": \"TESTE5\",\n    \"d13_enderocompleto\": \"TESTE5\",\n    \"d13_txpessoacontato\": \"TESTE5\",\n    \"d13_cnpjempresa\": \"TESTE5\",\n    \"d13_diretorioarquivos\" : \"TESTE5\"\n}\n\n\n\n"
+						},
+						"url": {
+							"raw": "localhost:8080/cadempresa",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadempresa"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/d13_empresa/3_Buscar_pelo_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d13_empresa/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d13_empresa",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete_empresa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d13_empresa/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d13_empresa",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutEmpresa",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdEmpresa\": 3,\r\n        \"nmEmpresa\": \"teste\",\r\n        \"nmAbreviado\": null,\r\n        \"nrTelefone\": null,\r\n        \"enderecoCompleto\": null,\r\n        \"txPessoacontato\": null,\r\n        \"cnpjEmpresa\": null,\r\n        \"diretorioArquivos\": null\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d13_empresa/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d13_empresa",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MFTCadAmf",
+			"item": [
+				{
+					"name": "d20_area",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cadamf",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadamf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "localhost:8080/d20_area",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "        {\n            \"cdListaEsp\": {\n                \"cdListaEsp\": 1\n            },\n            \"cdEmpresa\": {\n                \"cdEmpresa\": 1\n            },\n            \"cdEquacaoAreaBasalPadrao\": 1,\n            \"cdEquacaovolumeinvtemp\": 1,\n            \"nmArea\": \"teste\",\n            \"nmEstado\": \"Muana\",\n            \"nmMunicipio\": \"PA\",\n            \"latitude1Grau\": null,\n            \"latitude1Minuto\": null,\n            \"latitude1Orientacao\": null,\n            \"latitude2Grau\": null,\n            \"latitude2Minuto\": null,\n            \"latitude2Orientacao\": null,\n            \"longitude1Grau\": null,\n            \"longitude1Minuto\": null,\n            \"longitude1Orientacao\": null,\n            \"longitude2Grau\": null,\n            \"longitude2Minuto\": null,\n            \"longitude2Orientacao\": null,\n            \"precipMediaAnualmm\": null,\n            \"precipMediaMensalChuvamm\": null,\n            \"precipMediaMensalSecamm\": null,\n            \"mesesSeca\": null,\n            \"mesesChuva\": null,\n            \"tipoLogiaFlorestal\": null,\n            \"tipoSolo\": null,\n            \"mnResponsavel\": null,\n            \"enderecoResponsavel\": null,\n            \"nrTelefoneResponsavel\": null,\n            \"emailResponsavel\": null,\n            \"txHistoricoArea\": null,\n            \"txObservacaoArea\": null,\n            \"lgMudaContada\": null,\n            \"lgPalmeiraContada\": null,\n            \"relevo\": null\n        }"
+						},
+						"url": {
+							"raw": "localhost:8080/cadamf",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadamf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeletarRegistrosAMF",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cadamf/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadamf",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutAmf",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdarea\": 65,\r\n        \"nmArea\": \"Teste\",\r\n        \"nmEstado\": \"3\",\r\n        \"nmMunicipio\": \"1\",\r\n        \"latitude1Grau\": 1.0,\r\n        \"latitude1Minuto\": 1.0,\r\n        \"latitude1Orientacao\": \"1\",\r\n        \"latitude2Grau\": 1.0,\r\n        \"latitude2Minuto\": 1.0,\r\n        \"latitude2Orientacao\": \"1\",\r\n        \"longitude1Grau\": 1.0,\r\n        \"longitude1Minuto\": 1.0,\r\n        \"longitude1Orientacao\": \"1\",\r\n        \"longitude2Grau\": 1.0,\r\n        \"longitude2Minuto\": 1.0,\r\n        \"longitude2Orientacao\": \"1\",\r\n        \"precipMediaAnualmm\": 1.0,\r\n        \"precipMediaMensalChuvamm\": 1.0,\r\n        \"precipMediaMensalSecamm\": 1.0,\r\n        \"mesesSeca\": \"1\",\r\n        \"mesesChuva\": \"1\",\r\n        \"tipoLogiaFlorestal\": \"1\",\r\n        \"tipoSolo\": \"1\",\r\n        \"enderecoResponsavel\": \"1\",\r\n        \"nrTelefoneResponsavel\": \"1\",\r\n        \"emailResponsavel\": \"1\",\r\n        \"txHistoricoArea\": \"1\",\r\n        \"txObservacaoArea\": \"1\",\r\n        \"cdListaEsp\": 1.0,\r\n        \"lgMudaContada\": 1.0,\r\n        \"lgPalmeiraContada\": 1.0,\r\n        \"cdEquacaoAreaBasalPadrao\": 1.0,\r\n        \"cdEquacaovolumeinvtemp\": 1.0,\r\n        \"cdEmpresa\": null,\r\n        \"relevo\": \"1\",\r\n        \"nmResponsavel\": \"1\"\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d20_area/65",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d20_area",
+								"65"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MFT-PARCELA",
+			"item": [
+				{
+					"name": "d21_parcela",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d21_parcela",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d21_parcela"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InserirParcela",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 1\r\n        },\r\n        \"cdArea\": {\r\n            \"cdarea\": 78\r\n        },\r\n        \"tipoParcelaMft\": {\r\n            \"cdTipoparcela\": 1\r\n        },\r\n        \"txObservacaoParcela\": null,\r\n        \"latitudePonto1Grau\": 2,\r\n        \"latitudePonto1Minuto\": null,\r\n        \"latitudePonto1Orientacao\": null,\r\n        \"longitudePonto1Grau\": null,\r\n        \"longitudePonto1Minuto\": null,\r\n        \"longitudePonto1Orientacao\": null,\r\n        \"latitudePonto2Grau\": null,\r\n        \"latitudePonto2minuto\": null,\r\n        \"latitudePonto2Orientacao\": null,\r\n        \"longitudePonto2Grau\": null,\r\n        \"longitudePonto2Minuto\": null,\r\n        \"longitudePonto2Orientacao\": null,\r\n        \"latitudePonto3Grau\": null,\r\n        \"latitudePonto3Minuto\": null,\r\n        \"latitudePonto3Orientacao\": null,\r\n        \"longitudePonto3Grau\": null,\r\n        \"longitudePonto3Minuto\": null,\r\n        \"longitudePonto3Orientacao\": null,\r\n        \"latitudePonto4Grau\": null,\r\n        \"latitudePonto4Minuto\": null,\r\n        \"latitudePonto4Orientacao\": null,\r\n        \"longitudePonto4Grau\": null,\r\n        \"longitudePonto4Minuto\": null,\r\n        \"longitudePonto4Orientacao\": null,\r\n        \"lgTestemunha\": null\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d21_parcela",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d21_parcela"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteParcela",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d20_area/3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d20_area",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutParcela",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdParcela\": 1,\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 1\r\n        },\r\n        \"cdArea\": {\r\n            \"cdarea\": 78,\r\n            \"cdEmpresa\": {\r\n                \"cdEmpresa\": 1\r\n   \r\n            },\r\n            \"relevo\": \"1\",\r\n            \"nmResponsavel\": \"1\"\r\n        },\r\n        \"tipoParcelaMft\": {\r\n            \"cdTipoparcela\": 1,\r\n            \"cdEmpresa\": {\r\n                \"cdEmpresa\": 1\r\n            }\r\n        },\r\n        \"txObservacaoParcela\": \"Teste\",\r\n        \"latitudePonto1Grau\": 2,\r\n        \"latitudePonto1Minuto\": null,\r\n        \"latitudePonto1Orientacao\": null,\r\n        \"longitudePonto1Grau\": null,\r\n        \"longitudePonto1Minuto\": null,\r\n        \"longitudePonto1Orientacao\": null,\r\n        \"latitudePonto2Grau\": null,\r\n        \"latitudePonto2minuto\": null,\r\n        \"latitudePonto2Orientacao\": null,\r\n        \"longitudePonto2Grau\": null,\r\n        \"longitudePonto2Minuto\": null,\r\n        \"longitudePonto2Orientacao\": null,\r\n        \"latitudePonto3Grau\": null,\r\n        \"latitudePonto3Minuto\": null,\r\n        \"latitudePonto3Orientacao\": null,\r\n        \"longitudePonto3Grau\": null,\r\n        \"longitudePonto3Minuto\": null,\r\n        \"longitudePonto3Orientacao\": null,\r\n        \"latitudePonto4Grau\": null,\r\n        \"latitudePonto4Minuto\": null,\r\n        \"latitudePonto4Orientacao\": null,\r\n        \"longitudePonto4Grau\": null,\r\n        \"longitudePonto4Minuto\": null,\r\n        \"longitudePonto4Orientacao\": null,\r\n        \"lgTestemunha\": null\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d21_parcela/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d21_parcela",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MFT-TipoParcela",
+			"item": [
+				{
+					"name": "ListarTipoParcela",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d22_tipo_parcela",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d22_tipo_parcela"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AdicionarTopoParcela",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 1,\r\n            \"nmEmpresa\": \"TESTE6\",\r\n            \"nmAbreviado\": \"TESTE6\",\r\n            \"nrTelefone\": \"TESTE5\",\r\n            \"enderecoCompleto\": \"TESTE5\",\r\n            \"txPessoacontato\": \"TESTE5\",\r\n            \"cnpjEmpresa\": \"TESTE5\",\r\n            \"diretorioArquivos\": \"TESTE5\"\r\n        },\r\n        \"nmTipoparcela\": null,\r\n        \"lgEstudoCrescimento\": null\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d22_tipo_parcela",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d22_tipo_parcela"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteMFTTipoParcela",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d22_tipo_parcela/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d22_tipo_parcela",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutTipoParcela",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdTipoparcela\": 1,\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 2\r\n        },\r\n        \"nmTipoparcela\": \"teste\",\r\n        \"lgEstudoCrescimento\": 1\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d22_tipo_parcela/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d22_tipo_parcela",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "4eb75eff-4d3b-4f99-a3ce-097fe2def502",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "ff18335c-749f-4555-8ed2-6b32ccf5ff5a",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "MFT-d10ClasseTamanhoIndividuo",
+			"item": [
+				{
+					"name": "localhost:8080/d10_classe_tamanho_individuo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d10_classe_tamanho_individuo",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d10_classe_tamanho_individuo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MFTPostClasseIndividuo",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "\r\n    {\r\n        \"mmClasseTamanho\": \"usa o caralho do bigserial\"\r\n    }\r\n"
+						},
+						"url": {
+							"raw": "localhost:8080/d10_classe_tamanho_individuo",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d10_classe_tamanho_individuo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteClasseTamanhoIdividuo",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d10_classe_tamanho_individuo/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d10_classe_tamanho_individuo",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutClasseTamanhoIndividuo",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdcClasseTamanho\": 2,\r\n        \"mmClasseTamanho\": \"usa o caralho do bigserial porra.\"\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d10_classe_tamanho_individuo/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d10_classe_tamanho_individuo",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "d91545ed-28d9-44b1-bff0-861e88aeb320",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"id": "b2d03505-b99a-4436-b33b-b0ddc9c5af30",
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "MFT-Equacao",
+			"item": [
+				{
+					"name": "d08_equacao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d08_equacao",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d08_equacao"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "d08_equacao",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/d08_equacao",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"d08_equacao"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json;charset=UTF-8"
+								},
+								{
+									"key": "Transfer-Encoding",
+									"value": "chunked"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 16 Sep 2019 11:52:23 GMT"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"cdEquacao\": 1,\n        \"cdEmpresa\": {\n            \"cdEmpresa\": 1,\n            \"nmEmpresa\": \"TESTE6\",\n            \"nmAbreviado\": \"TESTE6\",\n            \"nrTelefone\": \"TESTE5\",\n            \"enderecoCompleto\": \"TESTE5\",\n            \"txPessoacontato\": \"TESTE5\",\n            \"cnpjEmpresa\": \"TESTE5\",\n            \"diretorioArquivos\": \"TESTE5\"\n        },\n        \"nmEquacao\": \"teste\",\n        \"txObservacaoEquacao\": \"teste\",\n        \"imEquacao\": null,\n        \"equacao\": \"teste\"\n    },\n    {\n        \"cdEquacao\": 20,\n        \"cdEmpresa\": {\n            \"cdEmpresa\": 1,\n            \"nmEmpresa\": \"TESTE6\",\n            \"nmAbreviado\": \"TESTE6\",\n            \"nrTelefone\": \"TESTE5\",\n            \"enderecoCompleto\": \"TESTE5\",\n            \"txPessoacontato\": \"TESTE5\",\n            \"cnpjEmpresa\": \"TESTE5\",\n            \"diretorioArquivos\": \"TESTE5\"\n        },\n        \"nmEquacao\": \"teste\",\n        \"txObservacaoEquacao\": \"teste\",\n        \"imEquacao\": null,\n        \"equacao\": \"teste\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Post-d08_equacao",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 1\r\n        },\r\n        \"nmEquacao\": \"teste\",\r\n        \"txObservacaoEquacao\": \"teste\",\r\n        \"imEquacao\": null,\r\n        \"equacao\": \"teste\"\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d08_equacao",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d08_equacao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete-d08_equacao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d08_equacao/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d08_equacao",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CadEquacao buscar_equacao_peloId",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d08_equacao/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d08_equacao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutEquacao",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdEquacao\": 2,\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 1\r\n       },\r\n        \"nmEquacao\": \"teste2\",\r\n        \"txObservacaoEquacao\": \"teste2\",\r\n        \"imEquacao\": null,\r\n        \"equacao\": \"teste2\"\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d08_equacao/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d08_equacao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MFT-GrupoEcologico",
+			"item": [
+				{
+					"name": "ListarGrupo",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/grupoecologico",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grupoecologico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostGrupoEcologico",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 1\r\n            \r\n        },\r\n        \"nmGrupoEcologico\": \"teste5\"\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/grupoecologico",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grupoecologico"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteGrupoEcologico",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/grupoecologico/9",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grupoecologico",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "MFT-GrupoEcologicoBUscarID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d06_grupo_ecologico/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d06_grupo_ecologico",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutGrupoEcologico",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"cdGrupoEcologico\": 2,\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 1\r\n        },\r\n        \"nmGrupoEcologico\": \"testeAtualiza\"\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/grupoecologico/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"grupoecologico",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MFT-UsoEspecie",
+			"item": [
+				{
+					"name": "GetUsoEspecie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d07_uso_especie",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d07_uso_especie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostUsoEspecie",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t\"cdEmpresa\": {\r\n            \"cdEmpresa\": 1\r\n        },\r\n        \"nmUso\": \"teste\",\r\n        \"lgMadeira\": 2\r\n        \r\n}"
+						},
+						"url": {
+							"raw": "localhost:8080/d07_uso_especie",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d07_uso_especie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUsoEspecie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d07_uso_especie/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d07_uso_especie",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutUsoEspecie",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\r\n        \"cdUso\": 1,\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 2\r\n        },\r\n        \"nmUso\": \"teste\",\r\n        \"lgMadeira\": 1\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d07_uso_especie/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d07_uso_especie",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MFT-Genero",
+			"item": [
+				{
+					"name": "GetGenero",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/genero",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostGenero",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"nmGenero\": \"teste\",\r\n        \"cdFamilia\": {\r\n            \"cdFamilia\": 1\r\n        }\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/genero",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genero"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteGenero",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/genero/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genero",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutGenero",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdGenero\": 1,\r\n        \"nmGenero\": \"testeAtualiza\",\r\n        \"cdFamilia\": {\r\n            \"cdFamilia\": 1\r\n        }\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/genero/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genero",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buscar Pelo ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/genero/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"genero",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MFT-SubParcela",
+			"item": [
+				{
+					"name": "GetSubParcela ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d29_subparcela",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d29_subparcela"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostSubParcela",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 1\r\n        },\r\n        \"cdArea\": {\r\n            \"cdarea\": 78,\r\n            \"cdEmpresa\": {\r\n                \"cdEmpresa\": 1\r\n            }\r\n        },\r\n        \"cdParcela\": {\r\n            \"cdParcela\": 1,\r\n            \"cdEmpresa\": {\r\n                \"cdEmpresa\": 1\r\n            },\r\n            \"cdArea\": {\r\n                \"cdarea\": 78,\r\n               \r\n                \"cdEmpresa\": {\r\n                    \"cdEmpresa\": 1\r\n                }\r\n            },\r\n            \"tipoParcelaMft\": {\r\n                \"cdTipoparcela\": 1,\r\n                \"cdEmpresa\": {\r\n                    \"cdEmpresa\": 1\r\n                  \r\n                }\r\n            }\r\n        }\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d29_subparcela",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d29_subparcela"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutSubParcela",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\t    \"cdSubparcela\": 1,\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 2\r\n        },\r\n        \"cdArea\": {\r\n            \"cdarea\": 78,\r\n            \"cdEmpresa\": {\r\n                \"cdEmpresa\": 1\r\n            }\r\n        },\r\n        \"cdParcela\": {\r\n            \"cdParcela\": 1,\r\n            \"cdEmpresa\": {\r\n                \"cdEmpresa\": 1\r\n            },\r\n            \"cdArea\": {\r\n                \"cdarea\": 78,\r\n               \r\n                \"cdEmpresa\": {\r\n                    \"cdEmpresa\": 1\r\n                }\r\n            },\r\n            \"tipoParcelaMft\": {\r\n                \"cdTipoparcela\": 1,\r\n                \"cdEmpresa\": {\r\n                    \"cdEmpresa\": 1\r\n                  \r\n                }\r\n            }\r\n        }\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d29_subparcela/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d29_subparcela",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteSubParcela",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d29_subparcela/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d29_subparcela",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MFT-ListaEspecie",
+			"item": [
+				{
+					"name": "GetListaEspecie",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cadlistaespecie",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cadlistaespecie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostListaEspecie",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "   {\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 2\r\n        },\r\n        \"nmListaEsp\": \"teste\"\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d05_lista_especie",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d05_lista_especie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteListaEspecie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/d05_lista_especie/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d05_lista_especie",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutListaEspecie ",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"cdListaEsp\": 1,\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 2\r\n        },\r\n        \"nmListaEsp\": \"testeAtualiza\"\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/d05_lista_especie/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"d05_lista_especie",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MFT-CategoriaProtcao",
+			"item": [
+				{
+					"name": "GetCategoriaProtecao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8081/categoriaProtecao",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"categoriaProtecao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostCategoriaProtecao",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 1\r\n        },\r\n        \"nmCategoriaProtecao\": \"teste minha Benga3\"\r\n    }"
+						},
+						"url": {
+							"raw": "localhost:8080/categoriaProtecao",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categoriaProtecao"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BucarPeloIDCaegoriaProtecao",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/categoriaProtecao/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"categoriaProtecao",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCaegoriaProtecao",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/categoriaProtecao/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"categoriaProtecao",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PutCategoriaProtecao",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\r\n        \"cdCategoriaProtecao\": 1,\r\n        \"cdEmpresa\": {\r\n            \"cdEmpresa\": 2\r\n        },\r\n        \"nmCategoriaProtecao\": \"teste minha Benga2\"\r\n }"
+						},
+						"url": {
+							"raw": "http://localhost:8081/cadfamilia",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"cadfamilia"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
